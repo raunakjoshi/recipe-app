@@ -1,0 +1,59 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "name": "chicken",
+      "category": "Pasta",
+      "preparationTime": "30 minutes",
+      "ingredients": [
+        "Spaghetti",
+        "Ground Beef",
+        "Tomato Sauce",
+        "Onion",
+        "Garlic"
+      ],
+      "instructions": "Boil spaghetti, cook beef, mix with sauce, and serve."
+    },
+    {
+      "id": 2,
+      "name": "Chicken Stir-Fry",
+      "category": "Asian",
+      "preparationTime": "20 minutes",
+      "ingredients": [
+        "Chicken Breast",
+        "Broccoli",
+        "Bell Pepper",
+        "Soy Sauce"
+      ],
+      "instructions": "Stir-fry chicken and vegetables in soy sauce."
+    },
+    {
+      "name": "burger",
+      "category": "food",
+      "preparationTime": "10",
+      "ingredients": [
+        "sugar,milk,meat"
+      ],
+      "instructions": "dfdf",
+      "id": 3
+    },
+    {
+      "name": "raunak",
+      "category": "dfd",
+      "preparationTime": "10",
+      "ingredients": [],
+      "instructions": "",
+      "id": 4
+    },
+    {
+      "name": "Jyoti",
+      "category": "female",
+      "preparationTime": "10",
+      "ingredients": [
+        "Nothing"
+      ],
+      "instructions": "Nothing",
+      "id": 5
+    }
+  ]
+}
