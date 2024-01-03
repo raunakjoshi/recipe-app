@@ -42,56 +42,89 @@ const RecipeForm = () => {
   };
 
   return (
-    <div>
-      <h2>Add New Recipe</h2>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Recipe Name:
+    <div className="container mx-auto my-8 p-4 bg-white shadow-md">
+      <h2 className="text-2xl font-bold mb-4 text-center">Add New Recipe</h2>
+      <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
+        <div className="mb-4">
+          <label className="block text-sm font-bold mb-2" htmlFor="name">
+            Recipe Name:
+          </label>
           <input
             type="text"
             name="name"
             value={formData.name}
             onChange={handleChange}
+            className="border border-gray-300 p-2 w-full"
           />
-        </label>
-        <label>
-          Category:
+        </div>
+        <div className="mb-4">
+          <label className="block text-sm font-bold mb-2" htmlFor="category">
+            Category:
+          </label>
           <input
             type="text"
             name="category"
             value={formData.category}
             onChange={handleChange}
+            className="border border-gray-300 p-2 w-full"
           />
-        </label>
-        <label>
-          Preparation Time:
+        </div>
+        <div className="mb-4">
+          <label
+            className="block text-sm font-bold mb-2"
+            htmlFor="preparationTime"
+          >
+            Preparation Time:
+          </label>
           <input
             type="text"
             name="preparationTime"
             value={formData.preparationTime}
             onChange={handleChange}
+            className="border border-gray-300 p-2 w-full"
           />
-        </label>
-        <label>
-          Ingredients (comma-separated):
-          <input
-            type="text"
-            name="ingredients"
-            value={formData.ingredients.join(", ")}
-            onChange={handleChange}
-            disabled
-          />
-          <button onClick={handleAddIngredient}>Add Ingredient</button>
-        </label>
-        <label>
-          Instructions:
+        </div>
+        <div className="mb-4">
+          <label className="block text-sm font-bold mb-2" htmlFor="ingredients">
+            Ingredients (comma-separated):
+          </label>
+          <div className="flex">
+            <input
+              type="text"
+              name="ingredients"
+              value={formData.ingredients.join(", ")}
+              onChange={handleChange}
+              disabled
+              className="border border-gray-300 p-2 w-full"
+            />
+            <button
+              onClick={handleAddIngredient}
+              className="ml-2 bg-blue-500 text-white p-2"
+            >
+              Add Ingredient
+            </button>
+          </div>
+        </div>
+        <div className="mb-4">
+          <label
+            className="block text-sm font-bold mb-2"
+            htmlFor="instructions"
+          >
+            Instructions:
+          </label>
           <textarea
             name="instructions"
             value={formData.instructions}
             onChange={handleChange}
+            className="border border-gray-300 p-2 w-full h-32"
           />
-        </label>
-        <button type="submit">Add Recipe</button>
+        </div>
+        <button
+          type="submit"
+          className="bg-green-500 text-white px-4 py-2 rounded"
+        >
+          Add Recipe
+        </button>
       </form>
     </div>
   );
